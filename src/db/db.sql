@@ -44,7 +44,7 @@ insert into rooms( rooms_value, size, project_id ) values( 3, 90, '119f6640-85f6
 DROP TABLE IF EXISTS banks;
 
 create table banks(
-    id uuid not null default uuid_generate_v4(),
+    id uuid not null default uuid_generate_v4() primary key,
     bank_name varchar(32) not null,
     cash_limit int not null,
     duration int not null,

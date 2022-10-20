@@ -1,5 +1,6 @@
 const model = require('./model')
 const projectsModel = require('../projects/model')
+const { UserInputError } = require('apollo-server')
 
 module.exports = {
     Query: {

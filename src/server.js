@@ -1,6 +1,6 @@
 const { ApolloServer } = require('apollo-server')
 const modules = require('./modules')
-const PORT = 5000 || process.env.PORT
+const PORT = process.env.PORT || 5000
 
 const server = new ApolloServer({
     modules
